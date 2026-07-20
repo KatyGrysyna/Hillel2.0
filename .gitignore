@@ -1,3 +1,1 @@
-/.idea/.gitignore
-/file_to_ignore.py
-/test/
+.venv/
