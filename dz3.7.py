@@ -1,0 +1,1 @@
+check_parity = lambda x: "парне" if x % 2 == 0 else "не парне"
