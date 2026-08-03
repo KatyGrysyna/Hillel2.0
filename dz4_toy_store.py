@@ -128,6 +128,6 @@ try:
 except ValueError as e:
     print(f"Помилка: {e}")
 
-print("\n--- Залишки на складі після всіх операцій ---")
+print("\n---Залишки на складі після всіх операцій---")
 for p in products:
     print(p)
