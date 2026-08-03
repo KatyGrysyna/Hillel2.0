@@ -88,10 +88,6 @@ def load_store(filename):
     return products, customers
 
 
-
-
-# --- Основна програма ---
-
 products, customers = load_store("store.txt")
 
 print("--- Товари в магазині ---")
@@ -102,7 +98,6 @@ print("\n--- Клієнти магазину ---")
 for c in customers:
     print(c)
 
-# Звичайний клієнт з замовленням
 customer = customers[0]
 order = Order()
 order.add_product(products[0], 2)   # 2 ведмедики
@@ -114,12 +109,12 @@ print(f"Клієнт: {customer.name} ({customer.email})")
 print(f"Замовлені товари: {[(p.name, qty) for p, qty in order.items]}")
 print(f"Загальна сума замовлення: {order.total_amount} грн")
 
-# Клієнт без жодного замовлення
+
 customer_no_orders = customers[2]
 print(f"\n--- Клієнт без замовлень ---")
 print(f"{customer_no_orders.name} має {len(customer_no_orders.orders)} замовлень")
 
-# Спроба замовити товар, якого немає в наявності
+
 print("\n--- Спроба замовити товар з нульовим залишком ---")
 puzzle = products[3]
 try_order = Order()
